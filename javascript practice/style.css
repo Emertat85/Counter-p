@@ -1,0 +1,135 @@
+body{
+    font-size: 16px;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.h1s{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.h1s p{
+    font-size: 6em;
+    font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    color:#2ec7e6;
+    -webkit-text-stroke: 2px ;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+.container {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background: rgb(19,90,170);
+background: linear-gradient(19deg, rgba(19,90,170,1) 0%, rgba(160,4,101,1) 100%);
+    margin-left: 58%;
+    margin-top: 10%;
+    border-radius: 15px;
+    transition: ease-out 0.6s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+    gap: 10px;
+}
+.container:hover{
+    box-shadow: 0px 0px 25px 0px #2ec7e6,0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.butonspan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+.numpreview{
+    color: #2ec7e6;
+    border: 1px solid  #2ec7e6;
+    padding: 15px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px #2ec7e6;
+}
+.buton{
+    width: 200px;
+    height: 30px;
+    border: 2px solid #2ec7e6;
+    background: transparent;
+    border-radius: 10px;
+    color: #2ec7e6;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+.buton:hover{
+    background-color:#2ec7e6;
+    color: black;
+}
+.savedarea{
+    border: 1px solid  #2ec7e6;
+    width: 250px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #2ec7e6;
+    padding: 5px;
+}
+/*media q */
+@media screen and (max-width:576px){
+.h1s{
+    display: none;
+}
+body{
+    font-size: 16px;
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    margin: auto;
+    margin-top: 30%;
+}
+.container:hover{
+    box-shadow: none;
+}
+.buton:active{
+    background-color:#2ec7e6;
+    color: black;
+}
+}
